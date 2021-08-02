@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\TransactionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,6 @@ use App\Http\Controllers\ProfileController;
 */
 
 Route::get('profile/{id}' , [ProfileController::class,'show']);
+
+
+Route::get('transactions' , [TransactionController::class,'index']);
